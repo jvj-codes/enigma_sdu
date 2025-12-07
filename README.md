@@ -1,6 +1,6 @@
 **enigma_sdu — Enigma simulator (SDU course)**
 
-This repository contains a Python implementation of an Enigma‑style encryption machine. It includes rotor logic, a GUI view, and (optional) utilities for encryption and decryption/encryption‑search.
+This repository contains a Python implementation of an Enigma‑style encryption machine. It includes rotor logic, a GUI view, and (optional) utilities for decryption/encryption‑search.
 
 ***File / Folder - Purpose / Description*** 
 1. EnigmaConstants.py	Defines global constants: the alphabet (ALPHABET), number of rotors (N_ROTORS), rotor wirings (ROTOR_PERMUTATIONS), and the reflector permutation (REFLECTOR_PERMUTATION). All rotor wiring/reflector configuration comes from here.
