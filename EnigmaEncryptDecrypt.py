@@ -38,7 +38,7 @@ class EnigmaEncrypt:
             
             if char not in ALPHABET: # if character is not in the alphabet, add the character and continue.
                 self._cipher += char # this enables punctuation and spaces to function
-                continue
+                continue # next char
             
             # press key to simulate outcome
             self._model.key_pressed(char)
