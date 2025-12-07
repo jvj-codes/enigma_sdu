@@ -37,8 +37,8 @@ Here are several ways you can use the project, depending on what you want to do.
         words = f.read().splitlines()
     
     # input for encryption
-    plaintext = "HELLO WORLD"
-    rotor_setting = "DMG"   # for example
+    plaintext = "HELLO WORLD MY NAME IS POTATO"
+    rotor_setting = "DMG"   # rotor setting leftmost slow to rightmost fast
     
     # encrypt message
     e = EnigmaEncrypt(plaintext, rotor_setting)
