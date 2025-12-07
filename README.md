@@ -25,28 +25,31 @@ Here are several ways you can use the project, depending on what you want to do.
 2. Programmatic encryption/decryption (no GUI)
     If you want to encrypt or decrypt a full message in code, e.g.:
 
-    #import libraries
-    from EngimaEncryptDecrypt import EnigmaEncrypt, EnigmaDecrypt
+     ```python
+    # import libraries
+    from EnigmaEncryptDecrypt import EnigmaEncrypt, EnigmaDecrypt
     import os
-
-    #load word list from word list to decipher
+    
+    # load word list from word list to decipher
     cwd = os.getcwd()
     word_path = cwd + "\\words\\words_english.txt"
     with open(word_path, "r", encoding="utf-8") as f:
         words = f.read().splitlines()
-
-    #input for encryption
+    
+    # input for encryption
     plaintext = "HELLO WORLD"
     rotor_setting = "DMG"   # for example
-
-    #encrypt message
-    e = EnigmaEncryp(plaintext, rotor_setting)
+    
+    # encrypt message
+    e = EnigmaEncrypt(plaintext, rotor_setting)
     cipher = e.encrypt()
     print("Encrypted:", cipher)
-
-    #decrypt message
+    
+    # decrypt message
     d = EnigmaDecrypt(cipher, words)
-    decrypted = d.encrypt()
+    decrypted = d.decrypt()
     print("Decrypted:", decrypted)
+    ```
+
 
 Note: The ReadMe file is generated/inspired by Chatbot GPT.
