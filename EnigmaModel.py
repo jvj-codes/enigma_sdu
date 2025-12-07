@@ -6,7 +6,6 @@ from EnigmaView import EnigmaView
 from EnigmaRotor import EnigmaRotor, apply_permutation  # import EngimaRotor class and apply_permutation function.
 from EnigmaConstants import ALPHABET, N_ROTORS, ROTOR_PERMUTATIONS, REFLECTOR_PERMUTATION  # import constants 
 
-
 class EnigmaKey:
     """Initial letter, pressed key and lamps."""
     def __init__(self, letter):  # initial instances, no pressed letter on keyboard, no lamps on.
@@ -23,7 +22,7 @@ class EnigmaModel:
         self._lit_lamp = None  # no lamp lit before a key is pressed
         self._keys = {letter: EnigmaKey(letter) for letter in ALPHABET}  # dictionary holding the keyboard keys
         self._rotors = [EnigmaRotor(perm) for perm in ROTOR_PERMUTATIONS]  # create three rotor objects based on constants
-
+        
     def add_view(self, view):
         """Adds a view to this model."""
         self._views.append(view)
