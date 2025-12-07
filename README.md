@@ -9,7 +9,7 @@ This repository contains a Python implementation of an Enigma‑style encryption
 4. EnigmaView.py	(Optional GUI) Visual representation of the Enigma machine: keyboard, lamps, rotors. Allows the user to press keys, see which lamp lights up, and manually click rotors to change their settings. This is useful for interactive encryption/decryption as if using a physical Enigma.
 5. EnigmaEncryptDecrypt.py A helper class for programmatic encryption/decryption without a GUI. You supply a plaintext (or ciphertext) and a rotor setting (e.g., "DMG"), and the code simulates the Enigma to output the result. Useful if you want to encrypt or decrypt messages in code rather than by the GUI.
 6. words/ folder	Intended to contain word‑lists (e.g. dictionary files) used by decryptor/dictionary‑based brute‑force utilities. Loading a word list can help in attempting to decrypt messages by matching decrypted text against common words.
-7. images/ folder	(Possibly for GUI assets) — depends on how EnigmaView.py uses it. Could contain images for keyboard, lampboard, background, etc.
+7. images/ folder	Needed for EnigmaView GUI to work. 
 
 ***How to run/use the code***
 
